@@ -27,7 +27,8 @@ module "vpc" {
   single_nat_gateway = true
 
   public_subnet_tags = {
-    Name = "overridden-name-public"
+    #Name = "overridden-name-public"
+    Name = var.vpc_name." public"
   }
 
   tags = {
