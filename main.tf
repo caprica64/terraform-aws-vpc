@@ -28,7 +28,7 @@ module "vpc" {
 
   public_subnet_tags = {
     #Name = "overridden-name-public"
-    Name = "public "var.vpc_name
+    Name = "public ${var.vpc_name}"
   }
 
   tags = {
