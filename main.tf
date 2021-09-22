@@ -4,7 +4,7 @@ provider "aws" {
 
 locals {
   #region = "eu-west-1"
-  #region = var.region
+  region = var.region
 }
 
 ################################################################################
@@ -12,7 +12,6 @@ locals {
 ################################################################################
 
 module "vpc" {
-  #source = "../../"
   source = "terraform-aws-modules/vpc/aws"
 
   name = "LabVPC"
