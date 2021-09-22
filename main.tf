@@ -14,7 +14,7 @@ locals {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "LabVPC"
+  name = var.vpc_name
   cidr = "10.0.0.0/16"
 
   azs             = ["${local.region}a", "${local.region}b", "${local.region}c"]
@@ -36,6 +36,6 @@ module "vpc" {
   }
 
   vpc_tags = {
-    Name = "vpc-name"
+    Name = var.vpc_name
   }
 }
