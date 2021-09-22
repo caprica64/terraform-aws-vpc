@@ -1,1 +1,1 @@
-region = "sa-east-1"
+region = "eu-west-2"
