@@ -9,3 +9,9 @@ variable "vpc_name" {
   type = string
   description = "VPC name for this lab"
 }
+
+variable "natgw" {
+  default = false
+  type = bool
+  description = "Enable NAT GW"
+}
