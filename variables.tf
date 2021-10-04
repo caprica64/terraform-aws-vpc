@@ -10,8 +10,3 @@ variable "vpc_name" {
   description = "VPC name for this lab"
 }
 
-variable "natgw" {
-  default = true
-  type = bool
-  description = "Enable NAT GW"
-}
