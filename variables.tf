@@ -11,7 +11,7 @@ variable "vpc_name" {
 }
 
 variable "natgw" {
-  default = false
+  default = true
   type = bool
   description = "Enable NAT GW"
 }
